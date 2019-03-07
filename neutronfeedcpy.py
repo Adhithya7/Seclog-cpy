@@ -112,7 +112,7 @@ for i in range(1,len(hostl)):
                 hashflag = 1
                 line_no1+=1        
 
-        output = open(home_path + 'cin_check.txt','w+')
+        output = open(home_path + 'neu_check.txt','w+')
 
         if hashflag == 0:
             output.write('hash verified')
