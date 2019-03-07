@@ -46,7 +46,7 @@ for i in range(1,len(hostl)):
     file2 = []
     host=str(hostl[i])
     uname=str(unamel[i])
-    line_no1 = 1       
+    line_no1 = 8       
     
     for logfile in neulog:
         s= requests.Session()
