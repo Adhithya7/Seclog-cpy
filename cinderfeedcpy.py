@@ -17,7 +17,7 @@ from nltk.probability import FreqDist
 
 home_path = '/seclog/'
 opfile_path = home_path + 'output_cinder.txt'
-cindlog = ['cind_backup','cind_api','cind_scheduler','cind_volume']
+cindlog = ['backup.log','api.log','scheduler.log','volume.log']
 
 with open (opfile_path, 'w+') as gen:
 	gen.write('start')
@@ -160,7 +160,7 @@ for i in range(1,len(hostl)):
                 if a==1 and b==1 and c==1:
                     final.append(word)
             with open (opfile_path, 'a+') as gen:
-                gen.write('\nIn '+uname+'@'+host+' cinder '+logfile+'.log :\n')
+                gen.write('\nIn '+uname+'@'+host+' cinder '+logfile+' :\n')
                 if not final:
 	                gen.write('No credentials detected')
                 else:

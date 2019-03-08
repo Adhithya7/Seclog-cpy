@@ -17,7 +17,7 @@ from nltk.probability import FreqDist
 
 home_path = '/seclog/'
 opfile_path = home_path + 'output_keystone.txt'
-keylog = ['keystone']
+keylog = ['keystone.log']
 
 with open (opfile_path, 'w+') as gen:
 	gen.write('start')
@@ -160,7 +160,7 @@ for i in range(1,len(hostl)):
                 if a==1 and b==1 and c==1:
                     final.append(word)
             with open (opfile_path, 'a+') as gen:
-                gen.write('\nIn '+uname+'@'+host+' keystone '+logfile+'.log :\n')
+                gen.write('\nIn '+uname+'@'+host+' keystone '+logfile+' :\n')
                 if not final:
 	                gen.write('No credentials detected')
                 else:

@@ -17,7 +17,7 @@ from nltk.probability import FreqDist
 
 home_path ='/seclog/'
 opfile_path = home_path + 'output_nova.txt'
-novalog = ['nova_api','nova_manage','nova_novncproxy','nova_api-os-compute','nova_placement-api','nova_xvpvncproxy','nova_consoleauth','nova_console','nova_scheduler','nova_conductor']
+novalog = ['nova-api.log','nova-manage.log','nova-novncproxy.log','nova-api-os-compute.log','nova-placement-api.log','nova-xvpvncproxy.log','nova-consoleauth.log','nova-console.log','nova-scheduler.log','nova-conductor.log']
 
 with open (opfile_path, 'w+') as gen:
 	gen.write('start')

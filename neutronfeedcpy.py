@@ -17,7 +17,7 @@ from nltk.probability import FreqDist
 
 home_path ='/seclog/'
 opfile_path = home_path + 'output_neutron.txt'
-neulog = ['neu_dhcp','neu_metering','neu_server','neu_l3','neu_openvswitch','neu_metadata','neu_ovs-cleanup']
+neulog = ['dhcp-agent.log','metering-agent.log','server.log','l3-agent.log','openvswitch-agent.log','metadata-agent.log','ovs-cleanup.log']
 
 with open (opfile_path, 'w+') as gen:
 	gen.write('start')
