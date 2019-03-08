@@ -51,7 +51,7 @@ for i in range(1,len(hostl)):
     for logfile in neulog:
         s= requests.Session()
         link = 'https://192.168.0.200:8080/neutron'
-        r = s.get(link,host,logfile)
+        r = s.get(link,host,'neutron',logfile)
         g = r.text
         fh = open('/seclog/inter.txt','w+')
         fh.seek(0)

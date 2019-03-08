@@ -51,7 +51,7 @@ for i in range(1,len(hostl)):
     for logfile in glanlog:
         s= requests.Session()
         link = 'https://192.168.0.200:8080/glance'
-        r = s.get(link,host,logfile)
+        r = s.get(link,host,'glance',logfile)
         g = r.text
         fh = open('/seclog/inter.txt','w+')
         fh.seek(0)

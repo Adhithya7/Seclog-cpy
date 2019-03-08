@@ -51,7 +51,7 @@ for i in range(1,len(hostl)):
     for logfile in keylog:
         s= requests.Session()
         link = 'https://192.168.0.200:8080/keystone'
-        r = s.get(link,host,logfile)
+        r = s.get(link,host,'keystone',logfile)
         g = r.text
         fh = open('/seclog/inter.txt','w+')
         fh.seek(0)
