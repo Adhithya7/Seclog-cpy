@@ -50,7 +50,7 @@ for i in range(1,len(hostl)):
     
     for logfile in cindlog:
         s= requests.Session()
-        link = 'https://192.168.0.200:8080/cinder'
+        link = 'http://192.168.0.200:8080/cinder'
         r = s.get(link,host,logfile)
         g = r.text
         fh = open('/seclog/inter.txt','w+')
