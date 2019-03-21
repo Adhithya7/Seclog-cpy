@@ -16,7 +16,8 @@ from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 
 home_path = '/seclog/'
-opfile_path = home_path + 'output_keystone.txt'
+tempfile_path = '/Seclog-Django/seclogproject/pix/pixapp/templates/'
+opfile_path = tempfile_path + 'output_keystone.txt'
 keylog = ['keystone']
 
 with open (opfile_path, 'w+') as gen:
