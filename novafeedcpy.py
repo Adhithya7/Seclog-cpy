@@ -50,7 +50,7 @@ for i in range(1,len(hostl)):
     
     for logfile in novalog:
         s= requests.Session()
-        link = 'https://192.168.0.200:8080/nova'
+        link = 'http://192.168.0.200:8080/nova'
         r = s.get(link,host,logfile)
         g = r.text
         fh = open('/seclog/inter.txt','w+')
