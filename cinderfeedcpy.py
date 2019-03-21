@@ -16,7 +16,8 @@ from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 
 home_path = '/seclog/'
-opfile_path = home_path + 'output_cinder.txt'
+tempfile_path = '/Seclog-Django/seclogproject/pix/pixapp/templates/'
+opfile_path = tempfile_path + 'output_cinder.txt'
 cindlog = ['cind_backup','cind_api','cind_scheduler','cind_volume']
 
 with open (opfile_path, 'w+') as gen:
