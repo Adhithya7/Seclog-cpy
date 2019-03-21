@@ -16,7 +16,8 @@ from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 
 home_path ='/seclog/'
-opfile_path = home_path + 'output_neutron.txt'
+tempfile_path = '/Seclog-Django/seclogproject/pix/pixapp/templates/'
+opfile_path = tempfile_path + 'output_neutron.txt'
 neulog = ['neu_dhcp','neu_metering','neu_server','neu_l3','neu_openvswitch','neu_metadata','neu_ovs-cleanup']
 
 with open (opfile_path, 'w+') as gen:
