@@ -75,7 +75,7 @@ for i in range(1,len(hostl)):
             fh.seek(int(postemp))
 
         else:
-            old_pos = posl[line_no1]
+            old_pos = int(posl[line_no1])
             old_md5_sum = hashl[line_no1]    
             m2 = hashlib.md5()
             fh.seek(0)
