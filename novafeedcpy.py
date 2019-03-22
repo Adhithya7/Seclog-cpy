@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import Nova as d
 import nltk
 import string
