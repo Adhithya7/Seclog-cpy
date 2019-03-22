@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import nltk
 import random
 import pickle
@@ -16,7 +18,7 @@ from sklearn.svm import SVC, LinearSVC, NuSVC
 from statistics import mode
 
 homedir = os.environ['HOME']
-template_path = homedir + '/mon/pix/pixapp/'
+template_path = '/seclog'
 
 tokens1 = []
 tokens = []
