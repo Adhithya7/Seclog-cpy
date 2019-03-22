@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import Glance as d
 import nltk
 import string
