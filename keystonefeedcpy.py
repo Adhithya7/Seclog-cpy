@@ -40,7 +40,7 @@ hashl = df2.hash_value.tolist()
 posl = df2.pos.tolist()
 unamel = df1.uname.tolist()
 hostl = df1.host.tolist()
-fin1 = open(home_path + 'test.csv','r+')
+fin1 = open(home_path + 'hashandpos.csv','r+')
 
 for i in range(1,len(hostl)):
     fh = []
