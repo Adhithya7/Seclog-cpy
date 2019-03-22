@@ -16,7 +16,7 @@ from sklearn.svm import SVC, LinearSVC, NuSVC
 from statistics import mode
 
 homedir = os.environ['HOME']
-pickle_path = homedir + '/mon/pix/pixapp/'
+pickle_path = '/seclog'
 
 tokens1 = []
 tokens = []
